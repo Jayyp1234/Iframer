@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="309px" height="625px" viewBox="0 0 309 625" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <desc>Created with Lunacy</desc>
+  <defs>
+    <filter filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB" id="filter_1">
+      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+      <feOffset dx="0" dy="0" />
+      <feGaussianBlur stdDeviation="5" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2509804 0" />
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect0_dropShadow" />
+      <feBlend mode="normal" in="SourceGraphic" in2="effect0_dropShadow" result="shape" />
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+      <feOffset dx="0" dy="0" />
+      <feGaussianBlur stdDeviation="2.5" />
+      <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2509804 0" />
+      <feBlend mode="normal" in2="shape" result="effect1_innerShadow" />
+    </filter>
+    <path d="M40.483 615.389C18.1234 615.389 0 597.213 0 574.787L0 40.6017C0 18.1782 18.1234 0 40.483 0L258.618 0C280.978 0 299.101 18.1782 299.101 40.6017L299.101 574.787C299.101 597.213 280.978 615.389 258.618 615.389L40.483 615.389Z" id="path_1" />
+    <clipPath id="clip_1">
+      <use xlink:href="#path_1" />
+    </clipPath>
+  </defs>
+  <g id="Sky-Body-2">
+    <g id="Body" transform="translate(1 9)">
+      <g filter="url(#filter_1)">
+        <g id="Body">
+          <use stroke="none" fill="#FEFEFE" xlink:href="#path_1" />
+          <g clip-path="url(#clip_1)">
+            <use xlink:href="#path_1" fill="none" stroke="#F2F2F2" stroke-width="8" />
+          </g>
+        </g>
+      </g>
+      <path d="M44.0244 22.0776C44.0244 9.88571 34.1692 0 22.013 0C9.85517 0 0 9.88571 0 22.0776C0 34.2711 9.85517 44.1552 22.013 44.1552C34.1692 44.1552 44.0244 34.2711 44.0244 22.0776Z" transform="translate(127.5 554.9634)" id="Home-Button" fill="none" stroke="#E6E5E6" stroke-width="2" />
+      <g id="Camera" transform="translate(97.5 22.53658)">
+        <path d="M9.43739 4.73254C9.43739 2.11941 7.32418 0 4.71869 0C2.11321 0 0 2.11941 0 4.73254C0 7.34567 2.11321 9.46508 4.71869 9.46508C7.32418 9.46508 9.43739 7.34567 9.43739 4.73254" transform="translate(0.5162811 12.52878)" id="Fill-13" fill="#E6E5E6" stroke="none" />
+        <path d="M6.56472 3.29199C6.56472 1.47466 5.09599 0 3.28398 0C1.47034 0 0 1.47466 0 3.29199C0 5.10932 1.47034 6.58398 3.28398 6.58398C5.09599 6.58398 6.56472 5.10932 6.56472 3.29199" transform="translate(48.75 0)" id="Fill-15" fill="#E6E5E6" stroke="none" />
+        <path d="M45.5644 4.21771L1.61932 4.21771C0.725455 4.21771 0 3.49175 0 2.59364L0 1.62407C0 0.727583 0.725455 0 1.61932 0L45.5644 0C46.4582 0 47.1837 0.727583 47.1837 1.62407L47.1837 2.59364C47.1837 3.49175 46.4582 4.21771 45.5644 4.21771" transform="translate(28.125 15.02439)" id="Fill-17" fill="#E6E5E6" stroke="none" />
+      </g>
+    </g>
+  </g>
+</svg>

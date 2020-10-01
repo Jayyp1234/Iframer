@@ -1,0 +1,193 @@
+@font-face {
+    font-family: Open Sans Regular;
+    src: url(OpenSans-Regular.ttf)
+}
+
+/* Sass Decoration to assign color values*/
+:root {
+    --black--: #343a40;
+    --yellow--: #FFAD01;
+    --ash--: #f2f2f2;
+    --brown--:#887392;
+    --lightgreen--:#5bd75b;
+    --green--: #00b33c;
+    --blue--: #007bff;
+    --deepblue--: #0056b3;
+}
+/* Margin and Padding removal*/
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+html{
+	overflow: scroll;
+}
+* {
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+nav{
+	width: 100%;
+	height: 100vh;
+	background: url("slider-1-1920x1080.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-blend-mode: darken;
+	background-color:rgba(0 , 0 , 0, 0.4);
+	display: grid;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+
+}
+nav button{
+	font-family: "Open Sans Regular";
+	padding: 15px 20px;
+	background-color: transparent;
+	border-radius: 5px;
+	font-weight: bolder;
+	box-shadow: inset 0 0 0 2px var(--green--);
+	color: white;
+	cursor: pointer;
+}
+nav button:hover{
+	background-color:rgba(0 , 0 , 0 , 0.6);
+}
+main{
+	padding-top: 50px;
+}
+main div{
+	display: flex;
+	margin: auto;
+}
+main div input{
+	width: 260px;
+	padding: 10px 24px;
+	font-family: "Open Sans Regular";
+	font-weight: bolder;
+	box-shadow: 0px 0px 0 0.5px var(--black--);
+	transition: box-shadow 0.5s ease-in;
+}
+main div input:hover{
+	box-shadow: 0px 0px 0 1.5px var(--lightgreen--);
+}
+main div span{
+	display: grid;
+	align-content: center;
+	align-items: center;
+	width: 40px;
+	background-color: var(--green--);
+	margin-top:-1px;
+	margin-bottom: -1px;
+	justify-content: center;
+	color: white;
+	cursor: pointer;
+}
+main div span:hover{
+	background-color: var(--lightgreen--);
+	}
+main input::placeholder{
+	font-family: "Open Sans Regular";
+	font-weight: bolder;
+}
+@media all and (max-width: 400px){
+	#search-bar input{
+		width: 75vw;
+	}
+	main div span{
+		width: 11vw;
+	}
+	main input::placeholder{
+		font-size: 3.5vw;
+	}
+	span i{
+		font-size: 3.5vw;
+	}
+}
+/* Iframe */
+
+
+.content{
+	display: flex;justify-content: space-around;
+}
+@media all and (max-width: 1100px){
+	.content{
+		display: block;
+	}
+	.ipad{
+	width: 400px;
+    height: 1312px;
+    margin-top:20px;
+    margin-bottom: -700px;
+    background-image: url("Macbook__ipad__iphone.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+}
+iframe.iframelaptop{
+	/* -ms-transform: scale(0.5, 0.595);  IE 9 
+  	-webkit-transform: scale(0.4, 0.3);  */
+  	margin-top: -170px;
+  	position: absolute;
+  	border:1px solid black;
+  	transform: scale( 0.24,0.3); 
+  	margin-left: -400px;
+}
+.laptop{
+	width: 400px;
+    height: 412px;
+    background-image: url("768px-Oxygen15.04.1-computer-laptop.svg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.phone{	
+    width: 300px;
+    height: 500px;
+    background-image: url("iphone.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+iframe.iframephone{
+  	-ms-transform: scale(0.75 ,0.79); /*IE 9*/
+  	-webkit-transform: scale(0.75 ,0.79); /*Safari */
+  	border:1px solid black;
+  	transform: scale(0.75 ,0.79);
+  	margin-left: -30px; 
+}
+.ipad{
+	width: 400px;
+    height: 1312px;
+    margin-bottom: -800px;
+    background-image: url("Macbook__ipad__iphone.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.ipad i{
+	transform: scale(0.275 ,0.285);
+    position: absolute;
+    margin-top: -440px;
+    margin-left: -345px;
+}
+iframe.iframeipad{
+		border:1px solid black;
+}
+@media all and (max-width: 450px){
+	main{
+		transform: scale(0.8);
+		margin-top: -150px;
+	}
+}
+@media all and (max-width: 380px){
+	main{
+		transform: scale(0.7);
+		margin-top: -250px;
+	}
+}
+@media all and (max-width: 347px){
+	main{
+		transform: scale(0.55);
+		margin-top: -300px;
+	}
+}

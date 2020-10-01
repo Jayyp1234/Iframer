@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<title>Iframer-MobileResponsive</title>
+	<meta content="" name="descriptison">
+  	<meta content="" name="keywords">
+    <link rel="stylesheet" type="text/css" href="design.css">
+    <!--icons link-->
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+</head>
+<body>
+    <nav>
+        <a href="#search-bar"> <button>GET STARTED</button> </a>
+    </nav>
+    <main>
+        <div style="display: flex;" id="search-bar">
+            <div>
+                <input type="text" name="" placeholder="Please Input Your URL">
+                <span> <i class="icon-search"></i></span>
+            </div>
+        </div>
+        <br><br>
+        <div class="content">
+            <div class="phone">
+                <iframe src=""  class="iframephone" id="iframephone"></iframe>
+            </div>
+            <div class="ipad" >
+                <i>
+                    <iframe src="" width="1024px" height="1366px" class="iframeipad"></iframe>
+                </i>
+            </div>
+            <div class="laptop">
+                <iframe src="" width="1200px" height="657px" class="iframelaptop"></iframe>
+            </div>
+        </div>
+        <span class="controltext"></span>
+        <button class="controlText">Click Me</button>   
+    </main>
+</body>
+<script type="text/javascript" src="main.js"></script>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("nav a").on("click" , function(e){
+            e.preventDefault();
+            $("body , html").animate({
+                scrollTop: $(this.hash).offset().top
+            } , 2000);
+        });
+        
+    });
+    $("#search-bar span").on("click" , function(){
+        var searchurl = $("#search-bar div input").val();
+        $("iframe").attr("src" , searchurl);
+        $("#search-bar div input").val("");
+    });
+    
+</script>
+
+</html>
